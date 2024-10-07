@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/inputNumber"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:hint="Ingrese números separados por comas"
+        android:inputType="number" />
+
+    <!-- Buttons for Binary and Decimal Conversion -->
+    <Button
+        android:id="@+id/btnDecimalToBinary"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="Convertir Decimal a Binario"
+        android:drawableStart="@drawable/ic_decimal_to_binary" />
+
+    <Button
+        android:id="@+id/btnBinaryToDecimal"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="Convertir Binario a Decimal"
+        android:drawableStart="@drawable/ic_binary_to_decimal" />
+
+    <!-- Operations: Suma y Resta -->
+    <Button
+        android:id="@+id/btnSumar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="Sumar"
+        android:drawableStart="@drawable/ic_sum" />
+
+    <Button
+        android:id="@+id/btnRestar"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
+        android:text="Restar"
+        android:drawableStart="@drawable/ic_subtract" />
+
+    <!-- Display Result -->
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Resultado:"
+        android:textSize="18sp" />
+</LinearLayout>
